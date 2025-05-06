@@ -1,0 +1,9 @@
+databaseChangeLog:
+- changeSet:
+    id: 1743862904366-1
+    author: Meu Computador (generated)
+    changes:
+    - dropColumn:
+        columnName: email
+        tableName: students
+

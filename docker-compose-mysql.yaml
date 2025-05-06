@@ -1,0 +1,18 @@
+version: '3.9'
+services:
+  db:
+    image: mysql:latest
+    container_name: mysql-container
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: 1203 # Substitua pelo valor desejado
+      MYSQL_DATABASE: db_test         # Nome do banco de dados inicial
+      MYSQL_USER: gmontinny                   # Nome do usuário
+      MYSQL_PASSWORD: 1203      # Senha do usuário
+    ports:
+      - "3306:3306"
+    volumes:
+      - db_data:/var/lib/mysql
+
+volumes:
+  db_data:

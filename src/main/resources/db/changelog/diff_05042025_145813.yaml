@@ -1,0 +1,32 @@
+databaseChangeLog:
+- changeSet:
+    id: 1743865100008-3
+    author: Meu Computador (generated)
+    changes:
+    - dropUniqueConstraint:
+        constraintName: email
+        tableName: teacher
+- changeSet:
+    id: 1743865100008-4
+    author: Meu Computador (generated)
+    changes:
+    - dropColumn:
+        columnName: email
+        tableName: students
+- changeSet:
+    id: 1743865100008-1
+    author: Meu Computador (generated)
+    changes:
+    - modifyDataType:
+        columnName: created_at
+        newDataType: datetime(6)
+        tableName: teacher
+- changeSet:
+    id: 1743865100008-2
+    author: Meu Computador (generated)
+    changes:
+    - modifyDataType:
+        columnName: updated_at
+        newDataType: datetime(6)
+        tableName: teacher
+

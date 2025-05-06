@@ -1,0 +1,10 @@
+databaseChangeLog:
+  - include:
+      file: db/changelog/changelog-1.yaml
+  - changeSet:
+      id: create-teacher-table
+      author: Giovanny
+      changes:
+        - sqlFile:
+            path: db/changelog/datas/V1__create_teacher_table.sql
+            relativeToChangelogFile: false
