@@ -86,5 +86,3 @@ Este comando gera um arquivo de changelog com as diferenças detectadas, que pod
 ## Contribuição
 Contribuições são bem-vindas! Sinta-se à vontade para abrir issues ou enviar pull requests.
 
-## Licença
-Este projeto está licenciado sob a licença MIT.
